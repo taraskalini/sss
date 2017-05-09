@@ -1,0 +1,459 @@
+@import "bourbon";
+@import "vars.scss";
+@import "../libs/lightslider/dist/css/lightslider.min.css";
+@import "../libs/magnific-popup/dist/magnific-popup.css";
+@import "../libs/select2/dist/css/select2.min.css";
+$hamburger-hover-opacity: 1;
+$hamburger-types: (arrow, arrow-r);
+$hamburger-layer-color: #000;
+@import "../app/libs/css-hamburgers/_sass/hamburgers/hamburgers.scss";
+
+
+.del-item-1{
+  background-image: url("../img/raster/del1.png");
+}
+
+.del-item-2{
+  background-image: url("../img/raster/del2.png");
+}
+
+.del-item-3{
+  background-image: url("../img/raster/del3.png");
+}
+
+.del-item-4{
+  background-image: url("../img/raster/del4.png");
+}
+
+.del-item{
+  width: 274px;
+  height: 630px;
+  background-repeat: no-repeat;
+  padding-top: 1px;
+  margin: 0 auto;
+  @if $adaptive == true {
+    @media (max-width: 1199px) {
+      margin-bottom: 70px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 35px;
+    }
+  }
+  h3{
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 34px;
+    text-transform: uppercase;
+    text-align: center;
+    height: 70px;
+    margin-top: 30px;
+    margin-bottom: 75px;
+  }
+  ol{
+    margin-left: 37px;
+    li{
+      list-style-image: url("../img/icons/marker.png");
+      color: #000000;
+      font-size: 14px;
+      font-weight: 100;
+      text-decoration: none;
+      margin-bottom: 8px;
+      span{
+        font-weight: 500;
+        text-decoration: underline;
+        padding-right: 4px;
+      }
+      ul{
+        li{
+          color: #000000;
+          font-size: 14px;
+          font-weight: 100;
+          list-style-image: none;
+          margin-bottom: 0;
+          span{
+            font-weight: 500;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+ }
+
+.services{
+  background-image: url("../img/raster/bg-dop.png");
+}
+
+.dop-item-1{
+  background-image: url("../img/raster/dop1.png");
+}
+
+.dop-item-2{
+  background-image: url("../img/raster/dop2.png");
+}
+
+.dop-item-3{
+  background-image: url("../img/raster/dop3.png");
+}
+
+.dop-item-4{
+  background-image: url("../img/raster/dop4.png");
+}
+
+.dop-item{
+  height: 460px;
+  ol{
+    li{
+      span{
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.pad-sp{
+  padding-bottom: 100px;
+  @if $adaptive == true {
+    @media (max-width: 1199px) {
+      padding-bottom: 50px;
+    }
+    @media (max-width: 767px) {
+      padding-bottom: 80px;
+    }
+  }
+}
+
+.kam-slider{
+  overflow-x: hidden;
+  padding-bottom: 110px;
+  .lSSlideOuter {
+    overflow: visible;
+
+  }
+  .lSSlideWrapper {
+    overflow: visible;
+
+  }
+  ul{
+    overflow: visible;
+    li{
+      .img-cont{
+        position: relative;
+        img{
+          transition: .3s all;
+        }
+        &:after{
+          transition: .3s all;
+          position: absolute;
+          content: '';
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.6);
+          visibility: visible;
+          opacity: 1;
+        }
+        &:hover{
+          z-index: 2;
+          &:after{
+            visibility: hidden;
+            opacity: 0;
+          }
+          img{
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}
+
+.snab{
+  padding-bottom: 100px;
+}
+
+.snab-content{
+  background-image: url("../img/raster/snab.png");
+  background-repeat: no-repeat;
+  width: 833px;
+  height: 678px;
+  margin: 0 auto;
+  margin-left: 200px;
+  padding-top: 1px;
+  @if $adaptive == true {
+    @media (max-width: 1060px) {
+      background-image: none;
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  img{
+    opacity: 0;
+    visibility: hidden;
+    width: 447px;
+    margin-top: 60px;
+    @if $adaptive == true {
+      @media (max-width: 1060px) {
+        opacity: 1;
+        visibility: visible;
+      }
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+    }
+  }
+  h1{
+    margin-top: 150px;
+    margin-left: -200px;
+    @if $adaptive == true {
+      @media (max-width: 1060px) {
+        margin-left: 0;
+        margin-top: 0;
+      }
+      @media (max-width: 600px){
+        font-size: 35px;
+      }
+      @media (max-width: 500px){
+        font-size: 30px;
+      }
+    }
+    br{
+      @if $adaptive == true {
+        @media (max-width: 1060px) {
+          display: none;
+        }
+      }
+    }
+    span{
+      @if $adaptive == true {
+        @media (max-width: 1060px) {
+          font-size: 44px;
+          font-weight: 700;
+        }
+        @media (max-width: 600px){
+          font-size: 35px;
+        }
+        @media (max-width: 500px){
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+.pay{
+  background-image: url("../img/raster/bg-dop.png");
+  padding-bottom: 100px;
+  @if $adaptive == true {
+    @media (max-width: 767px) {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+.pay-item{
+  text-align: center;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 60px;
+  @if $adaptive == true {
+    @media (max-width: 767px) {
+      margin-top: 0;
+      margin-bottom: 60px;
+    }
+  }
+  img{
+    width: 100%;
+  }
+  h4{
+    color: #000000;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    text-transform: uppercase;
+    margin-top: 25px;
+  }
+}
+
+.pay-item-1{
+  h4{
+    margin-left: -35px;
+    @if $adaptive == true {
+      @media (max-width: 400px) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.pay-item-2{
+  h4{
+    margin-right: -35px;
+    @if $adaptive == true {
+      @media (max-width: 400px) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.pre-footer{
+  padding: 120px 0;
+  h1{
+    margin-top: 50px;
+    @if $adaptive == true {
+      @media (max-width: 991px) {
+        text-align: center;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+footer{
+  background-color: #303030;
+  padding: 50px 0;
+  position: relative;
+  @if $adaptive == true {
+    @media (max-width: 1223px){
+      padding: 50px 220px;
+      text-align: center;
+    }
+    @media (max-width: 650px){
+      padding: 50px 0;
+    }
+  }
+  .calls{
+    margin-top: 0;
+    p{
+      color: #fefefe;
+      font-size: 14px;
+    }
+    a{
+      color: #fefefe;
+      &:hover,&:focus{
+        color: #fefefe;
+      }
+    }
+  }
+}
+
+.footer-mid{
+  width: 770px;
+  margin: 0 auto;
+  @if $adaptive == true {
+    @media (max-width: 1223px){
+      display: inline-block;
+      vertical-align: top;
+      width: auto;
+    }
+    @media (max-width: 650px){
+      display: block;
+      width: 200px;
+      margin: 35px auto;
+    }
+  }
+  ul{
+    float: left;
+    width: 159px;
+    margin-left: 30px;
+    @if $adaptive == true {
+      @media (max-width: 1223px){
+        float: none;
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 30px;
+      }
+      @media (max-width: 650px){
+        margin: 10px auto;
+      }
+    }
+    li{
+      a{
+        color: #fefefe;
+        font-size: 12px;
+        font-weight: 100;
+        line-height: 16px;
+        &:hover,&:focus{
+          color: #fefefe;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.footer-pull{
+  @if $adaptive == true {
+    @media (max-width: 1223px){
+      float: none!important;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+  .logo{
+    @if $adaptive == true {
+      @media (max-width: 1223px){
+        margin-top: 0;
+        margin-left: 0;
+      }
+      @media (max-width: 650px){
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+  }
+  .calls{
+    @if $adaptive == true {
+      @media (max-width: 1223px){
+        margin-right: 0;
+      }
+      @media (max-width: 650px){
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.footer-calls-p{
+  @if $adaptive == true {
+    @media (max-width: 1223px){
+      position: absolute;
+      top: 50px;
+      right: 20px;
+    }
+    @media (max-width: 650px){
+      position: static;
+    }
+  }
+}
+
+.footer-logo-p{
+  @if $adaptive == true {
+    @media (max-width: 1223px){
+      position: absolute;
+      top: 50px;
+      left: 20px;
+    }
+    @media (max-width: 650px){
+      position: static;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+//ALWAYS END
+@import "sketches.scss";

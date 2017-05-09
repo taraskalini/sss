@@ -1,0 +1,10 @@
+@import "bourbon";
+
+//@include font-face("Fregat", "../fonts/FregatBoldItalic/Fregat_bold_italic", 700 , italic , $file-formats: eot woff ttf svg);
+
+@include font-face("Museo Sans Cyrl", "../fonts/MuseoSansCyrl/MuseoSansCyrl100/MuseoSansCyrl100", 100 , $file-formats: eot woff ttf svg otf);
+
+@include font-face("Museo Sans Cyrl", "../fonts/MuseoSansCyrl/MuseoSansCyrl500/MuseoSansCyrl500", 500 , $file-formats: eot woff ttf svg otf);
+
+@include font-face("Museo Sans Cyrl", "../fonts/MuseoSansCyrl/MuseoSansCyrl700/MuseoSansCyrl700", 700 , $file-formats: eot woff ttf svg otf);
+
