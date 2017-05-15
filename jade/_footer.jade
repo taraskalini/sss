@@ -1,4 +1,21 @@
-
+section.pre-footer
+    .inner
+        .container-fluid
+            .row
+                .col-md-6
+                    h1 остались вопросы?
+                        br
+                        span получите консультацию
+                        br
+                        span прямо сейчас
+                .col-md-6
+                    .form-pink.form-block
+                        form.form-shake
+                            .field
+                                input(type="text" name="name" placeholder="Имя" required=)
+                            .field
+                                input(type="text" name="phone" placeholder="Телефон для связи" required=)
+                            button.btn.btn-red(name="send") получить консультацию
 footer
     .inner
         .container-fluid
@@ -54,7 +71,14 @@ footer
                     .calls
                         p пн-вс с 6.00 до 23.00
                         p.p-bold 8 (950) 164-11-64
-                        a(href="#") заказать звонок
+                        a.popup(href="#popcall") заказать звонок
+#popcall.form-pink.form-block.form-p.mfp-hide
+    form.form-shake
+        .field
+            input(type="text" name="name" placeholder="Имя" required=)
+        .field
+            input(type="text" name="phone" placeholder="Телефон для связи" required=)
+        button.btn.btn-red(name="send") получить консультацию
 script.
     var scr = {"scripts":[
         {"src" : "js/libs.js", "async" : false},
